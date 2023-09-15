@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <link rel="stylesheet" href="../../css/reset.css">
+  <style>
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    tr{
+      background-color: gray;
+    }
+    th{
+      background-color: skyblue;
+      border: 1px solid palegreen;
+    }
+    td{
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: blanchedalmond;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-box">
+    <div class="table-set">
+      <table class="table">
+        <colgroup>
+          <!-- 행 - 가로, 열 - 세로 -->
+          <!-- 열 그룹을 정의할때 사용, 장점 : 일관성, 간소화 -->
+          <!-- col 태그를 쓸 수 있고 col 갯수가 테이블의 열 개수임 -->
+          <col style="width: 10%;"> 
+          <col style="width: 10%;"> 
+          <col style="width: 20%;"> 
+          <col style="width: 20%;"> 
+          <col style="width: 30%;"> 
+          <col style="width: 10%;"> 
+          <!-- 6열짜리 -->
+        </colgroup>
+        <thead>
+          <tr>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>가</th>
+            <td colspan="2"></td>
+            <td colspan="1"></td>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th >나</th>
+            <td rowspan="2">d</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>d</th>
+            <td>r</td>
+            <td>d</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>라</th>
+            <td>라</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>마</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th rowspan="4">바</th>
+            <td>d</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>d</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>d</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>d</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- 
+        tr - 행 - 가로줄표시
+        td - 테이블의 한칸 표시
+        th - 테이블의 각 열에 대한 제목
+       -->
+    </div>
+  </div>
+</body>
+</html>
