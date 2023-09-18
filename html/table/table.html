@@ -6,12 +6,14 @@
   <title>Table</title>
   <link rel="stylesheet" href="../../css/reset.css">
   <style>
-    .table {
-      width: 100%;
-      border-collapse: collapse;
+    .table-set{
+      margin-top: 100px;
     }
-    tr{
-      background-color: gray;
+    .table {
+      max-width: 1024px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      min-width: 600px;
     }
     th{
       background-color: skyblue;
@@ -39,6 +41,7 @@
           <col style="width: 10%;"> 
           <!-- 6열짜리 -->
         </colgroup>
+        
         <thead>
           <tr>
             <th></th>
@@ -54,29 +57,27 @@
             <th>가</th>
             <td colspan="2"></td>
             <td colspan="1"></td>
-            <td colspan="2"></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <th >나</th>
-            <td rowspan="2">d</td>
+            <td>ㅇ</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <th>d</th>
-            <td>r</td>
-            <td>d</td>
+            <th>다</th>
             <td></td>
+            <td></td>
+            <td rowspan="2"></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <th>라</th>
-            <td>라</td>
             <td></td>
             <td></td>
             <td></td>
@@ -88,35 +89,35 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>ㅅ</td>
           </tr>
           <tr>
             <th rowspan="4">바</th>
-            <td>d</td>
+            <td>ㄱ</td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>d</td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>d</td>
-            <td></td>
+            <td>ㄴ</td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>d</td>
+            <td></td>
+            <td></td>
+            <td>ㄷ</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
             <td></td>
             <td></td>
             <td></td>
+            <td>ㄹ</td>
             <td></td>
           </tr>
         </tbody>
@@ -126,6 +127,20 @@
         td - 테이블의 한칸 표시
         th - 테이블의 각 열에 대한 제목
        -->
+    </div>
+    <div class="tit-set">
+      <ul>
+        <li>tr - 행 - 가로줄표시</li>
+        <li>th - 테이블의 각 열(세로줄)에 대한 제목</li>
+        <li>td - 테이블의 한 칸! 표시 </li>
+        <li>tr안에 th와 td가 들어가는 구조</li>
+        <li>colgroup을 통한 테이블을 관리할 수 있음</li>
+        <li>가로 셀합침은 colspan="숫자"</li>
+        <li>세로 셀합침은 rowspan="숫자"</li>
+        <li>셀합침이 되면 나머지 td는 잉여칸이된다.<br>
+        ex) td가 7갠데 colspan="3" 을하면 총 9칸이 되는것이다.(원래 한칸이 3칸 남은6칸 = 9칸) 그러면 기준이 7칸이라 2칸이 잉여칸처럼된다.</li>
+        <li>html의 table보단 한글의 표 설정이라고 생각하면 조금 더 쉽게 느껴질 수도 있다</li>
+      </ul>
     </div>
   </div>
 </body>
