@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <style>
+        .menus {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menus">
+        <div class="menu">work</div>
+        <div class="menu">home</div>
+        <div class="menu">contact</div>
+    </div>
+
+
+
+    <script>
+
+
+        let a = $('.menu').eq(0).text()
+        let b = a.split('')
+        let c = ''
+        // for(let i = 0; i = b.length; i++){
+        // }
+        console.log(b.length)
+        console.log(a,b,c)
+
+
+
+
+
+
+
+
+        // let menu = $('.menu')
+        // let text=[];
+        // menu.each((idx,ele)=>{
+        //     let qqq = menu.eq(idx)
+        //     text.push(qqq.text())
+        // })
+        // console.log(text)
+
+        // text[0] = text[0].split('')
+        // text[1] = text[1].split('')
+        // text[2] = text[2].split('')
+
+        // text.forEach((x,i)=>{
+        //     console.log(x,i)
+        //     menu.eq(i).html(
+        //         `<span>${x}</span>`
+        //         )
+        // })
+        // console.log(menu)
+
+
+        // let menu1 = $('.menu').eq(0)
+        // let menu1txt = menu1.text()
+        // let c = menu1txt.split('')
+        // let i='';
+        // c.forEach((x)=>{
+        //     i += `<span>${x}</span>`
+        // })
+        
+        // function split(){
+
+        // }
+
+        // gsap.to(menu,10,{
+        //     y : 100
+        // })
+    </script>
+</body>
+</html>
