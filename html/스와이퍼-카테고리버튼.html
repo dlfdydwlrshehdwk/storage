@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="../css/swiper/swiper-bundle.min.css">
   <script src="../js/swiper/swiper-bundle.js"></script>
   <script src="../js/swiper/swiper.min.js"></script>
-  <!-- <script src="../js/swiper/swiper.min.js.map"></script> -->
 
   <style>
     body * {
@@ -63,7 +62,7 @@
 
 
       
-     /*  
+     /***********************************************************
 
       스와이퍼구조
         var swiper1 = new Swiper(".mySwiper", {
@@ -111,13 +110,59 @@
 
       slidesOffsetAfter : number, 
       
+      direction : 'horizontal' (기본값) , 'vertical' // 슬라이드 방향지정
+
+      autoplay : boolean or object // true : 자동슬라이드 , object : 슬라이드 옵션추가
+
+      loop : boolean // true 무한 반복 슬라이드 , false 기본값 무한 반복하지않음
+
+      delay : number // 자동 슬라이드 시 한 슬라이드에 머무르는 시간 기본값 3000 3초
+
+      speed : number // 슬라이드 속도 기본값 300
+
+      slidesPerView : number or 'auto' // 한번에 보여질 슬라이드 개수 'auto' 는 각 슬라이드 넓이에 맞게 자동설정
+      
+      spaceBetween : number // 슬라이드 사이 간격 gap 
+      
+      centeredSlides : boolean // true 활성화된 슬라이드가 가운데 보임 , false 기본값
+
+      watchOverflow : boolean // 슬라이드가 되기 충분하지 않은 슬라이드 수 일경우 슬라이드 비활성화 기본값 false
+      // 슬라이드가 1개일때 pager,button 숨김 여부 설정
+
+      breackpoints : object // 화면 넓이에 따른 레이아웃 변경(반응형슬라이드) 단, slidePerView , slidesPerGroup, spaceBetween, slidesPerColumn 만 설정 가능
+      breakpoints: {
+      // 윈도우가 320보다 클때
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // 윈도우가 480보다 클때 
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    }
+      mousewheel : boolean or object // 마우스 휠로 슬라이드 이동
+
+      resistance : boolean // 터치 저항 여부
+
+      slideToClickedSlide : boolean // 해당 슬라이드 클릭시 슬라이드 위치로 이동
+
+      allowTouchMove : boolean // 버튼으로만 슬라이드 조작가능
+
+      slideOffsetBefore : number // 슬라이드 시작 부분 여백
+
+      freeMode : boolean // 슬라이드 넘길때 위치 고정여부
+
+      
+
       참고
       display:none 시 슬라이드 작동안할시?
 
       observer: true,
       observeParents: true,
       
-      */
+      ***********************************************************/
 
   </script>
 </body>
