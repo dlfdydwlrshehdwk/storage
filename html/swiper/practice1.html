@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/swiper/swiper.css">
+  <link rel="stylesheet" href="../../css/swiper/swiper-bundle.min.css">
+  <script src="../../js/jquery-3.6.3.min.js"></script>
+  <script src="../../js/jquery-ui.min.js"></script>
+  <script src="../../js/swiper/swiper.min.js"></script>
+  <script src="../../js/swiper/swiper-bundle.js"></script>
+  <style>
+    .category {
+      margin-top: 300px;
+      height: 500px;
+    }
+    .swiper {
+      width: 100%;
+      max-width: 1440px;
+      height: 100%;
+    }
+    .slideA {
+      display: flex;
+    }
+    .aside {
+      width: 70%;
+    }
+    .swiper-pagination-bullet{
+      width: 20px;
+      border-radius: 0;
+    }
+    .category-img {
+      width: 30%;
+      aspect-ratio: 1/1;
+    }
+    .slideB {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+      border-radius: 50%;
+    }
+    .slideA{
+      -webkit-backface-visibility : hidden;
+      backface-visibility : hidden;
+      pointer-events : none;
+    }
+    .wrapperB{
+      gap: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="category">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper wrapperA">
+        <div class="swiper-slide slideA">
+          <div class="category-img" style="background-color: skyblue;"></div>
+          <div class="aside">
+            <div class="title">배쓰</div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper wrapperB">
+                <div class="swiper-slide slideB"></div>
+                <div class="swiper-slide slideB"></div>
+                <div class="swiper-slide slideB"></div>
+                <div class="swiper-slide slideB"></div>
+                <div class="swiper-slide slideB"></div>
+                <div class="swiper-slide slideB"></div>
+                <div class="swiper-slide slideB"></div>
+                <div class="swiper-slide slideB"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slideA">
+          <div class="category-img" style="background-color: gainsboro;"></div>
+          <div class="aside">
+            <div class="title">샤워</div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slideA">
+          <div class="category-img" style="background-color: goldenrod;"></div>
+          <div class="aside">
+            <div class="title">보디</div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slideA">
+          <div class="category-img" style="background-color: salmon;"></div>
+          <div class="aside">
+            <div class="title">헤어</div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slideA">
+          <div class="category-img" style="background-color: aqua;"></div>
+          <div class="aside">
+            <div class="title">페이스</div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slideA">
+          <div class="category-img" style="background-color: rebeccapurple;"></div>
+          <div class="aside">
+            <div class="title">메이크업</div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slideA">
+          <div class="category-img" style="background-color: hotpink;"></div>
+          <div class="aside">
+            <div class="title">프래그런스</div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="swiper-button-next"></div> -->
+      <!-- <div class="swiper-button-prev"></div> -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <script>
+    let swiper = new Swiper('.mySwiper',{
+      // spaceBetween : 30,
+      effect : 'fade',
+      grabCursor : true,
+      loop : true,
+      fadeEffect : { // fade시 데이터 겹쳐지는거 방지
+        crossFade : true
+      },
+      navigation : {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    })
+
+    let swiper_sub =  document.querySelectorAll('.sub-swiper')
+    swiper_sub.forEach((ele,idx) => {
+      let swiper_sub = new Swiper(ele , {
+        grabCursor : true,
+        slidesPerView: "auto",
+        loop : true,
+      //   autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+      })
+    });
+
+  </script>
+</body>
+</html>
+<!-- 
+
+2. swiper js display:none 상태에서 작동하지 않을 경우
+display none 요소에서 block이 될 때 슬라이드는 작동되지 않는다.
+이때 아래 옵션값을 넣어 초기화 해준다.
+ 
+observer: true,  observeParents: true,
+출처: https://ranidiant.tistory.com/entry/swiperjs-slide-effect-fade-displaynoneblock [Digging.dev🍋디깅댑:티스토리]
+
+ -->
