@@ -618,8 +618,8 @@ button.swiper-pagination-bullet {
 /* .swiper-fade .swiper-slide {
   pointer-events: none;
   transition-property: opacity;
-}
-.swiper-fade .swiper-slide .swiper-slide {
+} */
+/* .swiper-fade .swiper-slide .swiper-slide {
   pointer-events: none;
 } */
 /* .swiper-fade .swiper-slide-active {
@@ -634,8 +634,7 @@ button.swiper-pagination-bullet {
   pointer-events: none;
   transition-property: opacity;
 }
-.swiper-fade > .swiper-wrapper >  .swiper-slide-active
-/* .swiper-fade > .swiper-wrapper > .swiper-slide-active .swiper-slide-active */ {
+.swiper-fade > .swiper-wrapper >  .swiper-slide-active  {
   pointer-events: auto;
 }
 .swiper-cube {

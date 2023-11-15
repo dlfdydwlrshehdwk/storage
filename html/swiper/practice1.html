@@ -51,16 +51,6 @@
       justify-content: center;
       align-items: center;
     }
-    /* .slideB::after{
-      content: 'asd';
-      font-size: 14px;
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    } */
     .slideB:hover{
       background-color: beige;
     }
@@ -218,8 +208,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="swiper-button-next"></div> -->
-      <!-- <div class="swiper-button-prev"></div> -->
       <div class="swiper-pagination"></div>
     </div>
   </div>
@@ -262,7 +250,6 @@
     function subSwiperInit(){
         SwiperArr.forEach(function(ele) {                              
             ele.autoplay.stop();  
-            // console.log(ele)
         }); 
     }
     subSwiperInit();
@@ -290,16 +277,6 @@
       }
     })
 
-    // 스크롤 일정 됐을때 스와이퍼 실행
-    // let sbsw = $('.sub-swiper')
-    // let trigger = sbsw.offset().top
-    // let scrollTop = 0
-    // $(window).on('scroll',function(){
-    //   a = $(window).scrollTop();
-    //   if(scrollTop >= trigger - 600) {
-    //   }
-    // })
-    console.log(SwiperArr)
     SwiperArr[0].autoplay.start();
 
 
