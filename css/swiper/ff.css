@@ -615,17 +615,27 @@ button.swiper-pagination-bullet {
 .swiper-fade.swiper-free-mode .swiper-slide {
   transition-timing-function: ease-out;
 }
-.swiper-fade .swiper-slide {
+/* .swiper-fade .swiper-slide {
   pointer-events: none;
   transition-property: opacity;
 }
 .swiper-fade .swiper-slide .swiper-slide {
   pointer-events: none;
-}
-.swiper-fade .swiper-slide-active {
+} */
+/* .swiper-fade .swiper-slide-active {
   pointer-events: auto;
+} */
+/* .swiper-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+} */
+/* 이거 다른데서 떼온거 */
+/* 이것도 */
+.swiper-fade > .swiper-wrapper > .swiper-slide {
+  pointer-events: none;
+  transition-property: opacity;
 }
-.swiper-fade .swiper-slide-active .swiper-slide-active {
+.swiper-fade > .swiper-wrapper >  .swiper-slide-active
+/* .swiper-fade > .swiper-wrapper > .swiper-slide-active .swiper-slide-active */ {
   pointer-events: auto;
 }
 .swiper-cube {
