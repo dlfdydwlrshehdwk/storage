@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- <link rel="stylesheet" href="../../css/swiper/swiper.css"> -->
+  <link rel="stylesheet" href="../../css/swiper/swiper.css">
   <link rel="stylesheet" href="../../css/swiper/swiper-bundle.min.css">
   <script src="../../js/jquery-3.6.3.min.js"></script>
   <script src="../../js/jquery-ui.min.js"></script>
@@ -20,11 +20,18 @@
       max-width: 1440px;
       height: 100%;
     }
+    .sub-swiper {
+      height: auto;
+    }
     .slideA {
       display: flex;
+      gap: 50px;
     }
-    .aside {
+    .lush-pro {
       width: 70%;
+    }
+    .lush-pro .title {
+      padding-bottom: 100px;
     }
     .swiper-pagination-bullet{
       width: 20px;
@@ -35,40 +42,54 @@
       aspect-ratio: 1/1;
     }
     .slideB {
+      position: relative;
       width: 200px;
       height: 200px;
       border: 1px solid #000;
       border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .slideA{
-      -webkit-backface-visibility : hidden;
-      backface-visibility : hidden;
-      pointer-events : none;
+    /* .slideB::after{
+      content: 'asd';
+      font-size: 14px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    } */
+    .slideB:hover{
+      background-color: beige;
     }
     .wrapperB{
-      gap: 50px;
+      z-index: 2;
     }
   </style>
 </head>
 <body>
   <div class="category">
-    <div class="swiper mySwiper swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden">
+    <div class="swiper mySwiper">
       <div class="swiper-wrapper wrapperA">
         <!-- 배쓰 -->
         <div class="swiper-slide slideA">
           <div class="category-img" style="background-color: skyblue;"></div>
-          <div class="aside">
+          <div class="lush-pro">
             <div class="title">배쓰</div>
-            <div class="swiper sub-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+            <div class="swiper sub-swiper">
               <div class="swiper-wrapper wrapperB">
-                <div class="swiper-slide slideB"></div>
-                <div class="swiper-slide slideB"></div>
-                <div class="swiper-slide slideB"></div>
-                <div class="swiper-slide slideB"></div>
-                <div class="swiper-slide slideB"></div>
-                <div class="swiper-slide slideB"></div>
-                <div class="swiper-slide slideB"></div>
-                <div class="swiper-slide slideB"></div>
+                <div class="swiper-slide slideB">1</div>
+                <div class="swiper-slide slideB">2</div>
+                <div class="swiper-slide slideB">3</div>
+                <div class="swiper-slide slideB">4</div>
+                <div class="swiper-slide slideB">5</div>
+                <div class="swiper-slide slideB">6</div>
+                <div class="swiper-slide slideB">7</div>
+                <div class="swiper-slide slideB">8</div>
+                <div class="swiper-slide slideB">9</div>
+                <div class="swiper-slide slideB">10</div>
               </div>
             </div>
           </div>
@@ -76,18 +97,20 @@
         <!-- 샤워 -->
         <div class="swiper-slide slideA">
           <div class="category-img" style="background-color: gainsboro;"></div>
-          <div class="aside">
+          <div class="lush-pro">
             <div class="title">샤워</div>
-            <div class="swiper sub-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper wrapperB">
+                <div class="swiper-slide slideB">1</div>
+                <div class="swiper-slide slideB">2</div>
+                <div class="swiper-slide slideB">3</div>
+                <div class="swiper-slide slideB">4</div>
+                <div class="swiper-slide slideB">5</div>
+                <div class="swiper-slide slideB">6</div>
+                <div class="swiper-slide slideB">7</div>
+                <div class="swiper-slide slideB">8</div>
+                <div class="swiper-slide slideB">9</div>
+                <div class="swiper-slide slideB">10</div>
               </div>
             </div>
           </div>
@@ -95,18 +118,20 @@
         <!-- 보디 -->
         <div class="swiper-slide slideA">
           <div class="category-img" style="background-color: goldenrod;"></div>
-          <div class="aside">
+          <div class="lush-pro">
             <div class="title">보디</div>
-            <div class="swiper sub-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper wrapperB">
+                <div class="swiper-slide slideB">1</div>
+                <div class="swiper-slide slideB">2</div>
+                <div class="swiper-slide slideB">3</div>
+                <div class="swiper-slide slideB">4</div>
+                <div class="swiper-slide slideB">5</div>
+                <div class="swiper-slide slideB">6</div>
+                <div class="swiper-slide slideB">7</div>
+                <div class="swiper-slide slideB">8</div>
+                <div class="swiper-slide slideB">9</div>
+                <div class="swiper-slide slideB">10</div>
               </div>
             </div>
           </div>
@@ -114,18 +139,20 @@
         <!-- 헤어 -->
         <div class="swiper-slide slideA">
           <div class="category-img" style="background-color: salmon;"></div>
-          <div class="aside">
+          <div class="lush-pro">
             <div class="title">헤어</div>
-            <div class="swiper sub-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper wrapperB">
+                <div class="swiper-slide slideB">1</div>
+                <div class="swiper-slide slideB">2</div>
+                <div class="swiper-slide slideB">3</div>
+                <div class="swiper-slide slideB">4</div>
+                <div class="swiper-slide slideB">5</div>
+                <div class="swiper-slide slideB">6</div>
+                <div class="swiper-slide slideB">7</div>
+                <div class="swiper-slide slideB">8</div>
+                <div class="swiper-slide slideB">9</div>
+                <div class="swiper-slide slideB">10</div>
               </div>
             </div>
           </div>
@@ -133,18 +160,20 @@
         <!-- 페이스 -->
         <div class="swiper-slide slideA">
           <div class="category-img" style="background-color: aqua;"></div>
-          <div class="aside">
+          <div class="lush-pro">
             <div class="title">페이스</div>
-            <div class="swiper sub-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper wrapperB">
+                <div class="swiper-slide slideB">1</div>
+                <div class="swiper-slide slideB">2</div>
+                <div class="swiper-slide slideB">3</div>
+                <div class="swiper-slide slideB">4</div>
+                <div class="swiper-slide slideB">5</div>
+                <div class="swiper-slide slideB">6</div>
+                <div class="swiper-slide slideB">7</div>
+                <div class="swiper-slide slideB">8</div>
+                <div class="swiper-slide slideB">9</div>
+                <div class="swiper-slide slideB">10</div>
               </div>
             </div>
           </div>
@@ -152,18 +181,20 @@
         <!-- 메이크업 -->
         <div class="swiper-slide slideA">
           <div class="category-img" style="background-color: rebeccapurple;"></div>
-          <div class="aside">
+          <div class="lush-pro">
             <div class="title">메이크업</div>
-            <div class="swiper sub-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper wrapperB">
+                <div class="swiper-slide slideB">1</div>
+                <div class="swiper-slide slideB">2</div>
+                <div class="swiper-slide slideB">3</div>
+                <div class="swiper-slide slideB">4</div>
+                <div class="swiper-slide slideB">5</div>
+                <div class="swiper-slide slideB">6</div>
+                <div class="swiper-slide slideB">7</div>
+                <div class="swiper-slide slideB">8</div>
+                <div class="swiper-slide slideB">9</div>
+                <div class="swiper-slide slideB">10</div>
               </div>
             </div>
           </div>
@@ -171,61 +202,92 @@
         <!-- 프래그런스 -->
         <div class="swiper-slide slideA">
           <div class="category-img" style="background-color: hotpink;"></div>
-          <div class="aside">
+          <div class="lush-pro">
             <div class="title">프래그런스</div>
-            <div class="swiper sub-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
-                <div class="swiper-slide"></div>
+            <div class="swiper sub-swiper">
+              <div class="swiper-wrapper wrapperB">
+                <div class="swiper-slide slideB">1</div>
+                <div class="swiper-slide slideB">2</div>
+                <div class="swiper-slide slideB">3</div>
+                <div class="swiper-slide slideB">4</div>
+                <div class="swiper-slide slideB">5</div>
+                <div class="swiper-slide slideB">6</div>
+                <div class="swiper-slide slideB">7</div>
+                <div class="swiper-slide slideB">8</div>
+                <div class="swiper-slide slideB">9</div>
+                <div class="swiper-slide slideB">10</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- <div class="swiper-button-next"></div> -->
-      <!-- <div class="swiper-button-prev"></div> -->
       <div class="swiper-pagination"></div>
     </div>
   </div>
 
   <script>
+    
+
+    let subSwiper = $('.sub-swiper')
+    console.log(subSwiper)
+    let SwiperArr = [];
+
+    subSwiper.each(function(){
+      let autoSwiper = new Swiper(this, {
+        spaceBetween : 140,
+        slidesPerView : 'auto',
+        grabCursor : true,
+        autoplay : {
+          delay : 1000,
+          disableOnInteraction : true,
+        },
+        on : { 
+          // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
+          reachEnd : () => {
+            swiper.slideNext() // 다음슬라이드로
+          }
+        }
+      })
+      // 서브 스와이퍼 슬라이드에 마우스 얹으면 오토플레이 멈추기
+      $('.sub-swiper .swiper-slide').on('mouseenter', function(){           
+        autoSwiper.autoplay.stop();
+      })
+      // 서브 스와이퍼 슬라이드에 마우스 떼면 오토플레이 실행
+      $('.sub-swiper .swiper-slide').on('mouseleave', function(){           
+          autoSwiper.autoplay.start();
+      })
+
+      SwiperArr.push(autoSwiper)
+    })
+
+    // 상품이미지 초기화
+    function subSwiperInit(){
+        SwiperArr.forEach(function(ele) {                              
+            ele.autoplay.stop();  
+        }); 
+    }subSwiperInit();
+
+    // 메인 스와이퍼
     let swiper = new Swiper('.mySwiper',{
-      // spaceBetween : 30,
       effect : 'fade',
       grabCursor : true,
-      loop : true,
+      speed : 500,
+      rewind : true,
       fadeEffect : { // fade시 데이터 겹쳐지는거 방지
         crossFade : true
-      },
-      navigation : {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
       },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      on : {
+        slideChange : () => {
+          subSwiperInit();             
+          SwiperArr[swiper.realIndex].slideTo(0,0,false);                   
+          SwiperArr[swiper.realIndex].autoplay.start(); 
+        }
+      }
     })
-
-    let swiper_sub =  document.querySelectorAll('.sub-swiper')
-    swiper_sub.forEach((ele,idx) => {
-      let swiper_sub = new Swiper(ele , {
-        grabCursor : true,
-        slidesPerView: "auto",
-        loop : true,
-      //   autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
-      })
-    });
-
   </script>
 </body>
 </html>
