@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../../css/swiper/swiper.css">
-  <link rel="stylesheet" href="../../css/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../../css/swiper/swiper-bundle.css">
   <script src="../../js/jquery-3.6.3.min.js"></script>
   <script src="../../js/jquery-ui.min.js"></script>
   <!-- <script src="../../js/swiper/swiper.min.js"></script> -->
@@ -221,6 +221,8 @@
           </div>
         </div>
       </div>
+      <!-- <div class="swiper-button-next"></div> -->
+      <!-- <div class="swiper-button-prev"></div> -->
       <div class="swiper-pagination"></div>
     </div>
   </div>
@@ -229,7 +231,6 @@
     
 
     let subSwiper = $('.sub-swiper')
-    console.log(subSwiper)
     let SwiperArr = [];
 
     subSwiper.each(function(){
@@ -239,7 +240,7 @@
         grabCursor : true,
         autoplay : {
           delay : 1000,
-          disableOnInteraction : true,
+          disableOnInteraction : false,
         },
         on : { 
           // 스와이퍼가 마지막 슬라이드에 도달하면 이벤트 발생
@@ -264,8 +265,10 @@
     function subSwiperInit(){
         SwiperArr.forEach(function(ele) {                              
             ele.autoplay.stop();  
+            // console.log(ele)
         }); 
-    }subSwiperInit();
+    }
+    subSwiperInit();
 
     // 메인 스와이퍼
     let swiper = new Swiper('.mySwiper',{
@@ -283,11 +286,26 @@
       on : {
         slideChange : () => {
           subSwiperInit();             
-          SwiperArr[swiper.realIndex].slideTo(0,0,false);                   
+          SwiperArr[swiper.realIndex].slideTo(0,0,false);    
           SwiperArr[swiper.realIndex].autoplay.start(); 
+          // realIndex - 현재 활성 슬라이드의 인덱스 번호.
         }
       }
     })
+
+    // 스크롤 일정 됐을때 스와이퍼 실행
+    // let sbsw = $('.sub-swiper')
+    // let trigger = sbsw.offset().top
+    // let scrollTop = 0
+    // $(window).on('scroll',function(){
+    //   a = $(window).scrollTop();
+    //   if(scrollTop >= trigger - 600) {
+    //   }
+    // })
+    console.log(SwiperArr)
+    SwiperArr[0].autoplay.start();
+
+
   </script>
 </body>
 </html>
